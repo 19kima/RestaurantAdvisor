@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1440.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.SignUpViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="526.0" prefWidth="1440.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+      <children>
+        <Label layoutX="491.0" layoutY="81.0" text="Name" />
+        <TextField fx:id="name" layoutX="502.0" layoutY="141.0" prefWidth="437.0" promptText="Name" />
+        <Label layoutX="492.0" layoutY="176.0" text="Login Information" />
+        <TextField fx:id="username" layoutX="502.0" layoutY="242.0" prefWidth="437.0" promptText="Username" />
+        <TextField fx:id="password" layoutX="502.0" layoutY="276.0" prefWidth="437.0" promptText="Password" />
+        <Button fx:id="Signup" layoutX="656.0" layoutY="334.0" mnemonicParsing="false" onAction="#Signup" text="SignUp" />
+        <Label layoutX="664.0" layoutY="23.0" text="Sign Up" underline="true" />
+      </children>
+      <stylesheets>
+        <URL value="@../css/RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+    <AnchorPane prefHeight="61.0" prefWidth="1439.9999169921875" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Button id="Login" mnemonicParsing="false" onAction="#Login" prefHeight="30.0" prefWidth="86.0" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <Button disable="false" layoutX="372.0" layoutY="12.0" mnemonicParsing="false" onAction="#Restaurants" prefHeight="35.0" prefWidth="141.22216796875" text="Restaurants" visible="false" />
+        <Button layoutX="504.0" layoutY="12.0" mnemonicParsing="false" onAction="#YourReviews" prefHeight="35.0" prefWidth="163.0" text="Your Reviews" visible="false" />
+        <Button layoutX="262.0" layoutY="12.0" mnemonicParsing="false" onAction="#Home" prefHeight="35.0" prefWidth="110.0" text="Home" />
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@../images/logo.png" />
+          </image>
+        </ImageView>
+      </children>
+      <effect>
+        <DropShadow height="15.0" radius="3.25" width="0.0" />
+      </effect>
+      <stylesheets>
+        <URL value="@../css/NavBar.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

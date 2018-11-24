@@ -1,0 +1,37 @@
+.menu-bar {
+	-fx-background-color: white;
+}
+.text {
+	-fx-font-family: Actor;
+	-fx-fill: black;
+}
+.label {
+	-fx-font-size: 20px;
+	-fx-label-padding: 8px;
+	-fx-background-color: white;
+}
+(Text) {
+	-fx-font-family: Actor;
+	-fx-fill: black;
+}
+
+.label:hover .text {
+	-fx-fill: #a9a9a9;
+}
+.button {
+	-fx-background-color: #ffa834;
+}
+.button:hover {
+	-fx-background-color: white;
+	-fx-border-color: #ffa834;
+	-fx-border-weight: 2px;
+	-fx-border-radius: 5px, 5px, 4px, 3px;
+	-fx-border-insets: 0px 0px-1px 0px, 0px, 1px, 2px;
+}
+.button:hover .text {
+	-fx-font-family: Actor;
+	-fx-fill: #ffa834;
+}
+.text-field {
+	-fx-border-radius: 20px, 20px, 15px, 10px;
+}

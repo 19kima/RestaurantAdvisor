@@ -1,0 +1,7 @@
+.menu-bar {
+	-fx-background-color: white;
+}
+.label {
+	-fx-font-family: Actor;
+	
+}

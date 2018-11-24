@@ -1,0 +1,76 @@
+package controllers;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+
+public class HomeViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private Button Search;
+
+    @FXML
+    private TextField SearchText;
+
+
+    @FXML
+    void Home(ActionEvent event) {
+    }
+
+    @FXML
+    void Login(ActionEvent event) throws Exception {
+    	Parent newView = (VBox) FXMLLoader.load(getClass().getResource("/view/LoginView.fxml"));
+		Scene newScene = new Scene(newView);
+		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		mainWindow.setScene(newScene);
+    }
+
+    @FXML
+    void Restaurants(ActionEvent event) throws Exception {
+    	Parent newView = (VBox) FXMLLoader.load(getClass().getResource("/view/ResultsView.fxml"));
+		Scene newScene = new Scene(newView);
+		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		mainWindow.setScene(newScene);
+    }
+
+    @FXML
+    void Search(ActionEvent event) throws Exception {
+    	Parent newView = (VBox) FXMLLoader.load(getClass().getResource("/view/ResultsView.fxml"));
+		Scene newScene = new Scene(newView);
+		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		mainWindow.setScene(newScene);
+    }
+
+    @FXML
+    void YourReviews(ActionEvent event) throws Exception {
+    	Parent newView = (VBox) FXMLLoader.load(getClass().getResource("/view/YourReviewsView.fxml"));
+		Scene newScene = new Scene(newView);
+		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		mainWindow.setScene(newScene);
+    }
+
+    @FXML
+    void initialize() {
+        assert Search != null : "fx:id=\"Search\" was not injected: check your FXML file 'HomeView.fxml'.";
+        assert SearchText != null : "fx:id=\"SearchText\" was not injected: check your FXML file 'HomeView.fxml'.";
+
+
+    }
+
+}

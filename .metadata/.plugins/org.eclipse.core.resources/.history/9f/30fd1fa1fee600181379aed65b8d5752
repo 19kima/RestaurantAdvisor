@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox prefHeight="727.0" prefWidth="1440.0" fx:controller="C:\Andrew Kim\DSFinalProject\DataStructureFinal\src\landingPage\HomeViewController.java" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="60.0" prefWidth="200.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@logo.png" />
+          </image>
+        </ImageView>
+        <MenuBar prefHeight="59.82856750488281" prefWidth="1175.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="Home" />
+            <Menu mnemonicParsing="false" text="Restaurants" fx:id="RestaurantNav" />
+            <Menu mnemonicParsing="false" text="My Reviews" fx:id="MyReviewsNav" />
+          </menus>
+          <stylesheets>
+            <URL value="@NavBar.css" />
+          </stylesheets>
+        </MenuBar>
+        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+          <stylesheets>
+            <URL value="@NavBar.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <effect>
+        <DropShadow height="7.5" radius="1.375" width="0.0" />
+      </effect>
+    </AnchorPane>
+    <AnchorPane prefHeight="363.0" prefWidth="1440.0000061035157">
+      <children>
+        <ImageView fitHeight="562.125" fitWidth="1439.0399744970873" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.96" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <image>
+            <Image url="@mmmmmyberries.jpg" />
+          </image>
+        </ImageView>
+        <TextField layoutX="239.0" layoutY="333.0" prefHeight="50.0" prefWidth="800.0" promptText="Search By Restaurant Name" style="-fx-border-radius: 25px 0px 0px 25px;&#10;-fx-background-radius: 25px 0px 0px 25px;&#10;-fx-font-size: 20px;">
+          <stylesheets>
+            <URL value="@Tangerine.css" />
+          </stylesheets>
+        </TextField>
+        <Button id="Search" fx:id="SearchText" layoutX="1039.0" layoutY="333.0" mnemonicParsing="false" onAction="#Search" prefHeight="50.0" prefWidth="163.0" style="-fx-border-radius: 0px 25px 25px 0px;&#10;-fx-background-radius: 0px 25px 25px 0px;" text="Search">
+          <stylesheets>
+            <URL value="@Tangerine.css" />
+          </stylesheets>
+        </Button>
+        <SplitPane dividerPositions="0.3331015299026426, 0.6662030598052852" focusTraversable="true" prefHeight="188.0" prefWidth="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="477.0">
+          <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <TextArea layoutX="215.0" layoutY="28.0" prefHeight="130.0" prefWidth="227.0" text="&quot;This site helped me find a great place to take my crossfit buddies after a long workout&quot;&#10;&#10;&#9;&#9;-Ryan Osterberg" wrapText="true" />
+                <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="37.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@FitBoi.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <TextArea layoutX="203.0" layoutY="28.0" prefHeight="130.0" prefWidth="245.0" text="&quot;Proabably saved me 20,000 hours when searching for a good place to eat&quot;&#10;&#10;&#9;&#9;-Ryan Bennett" wrapText="true" />
+                <ImageView fitHeight="125.90256718861849" fitWidth="141.22218322753906" layoutX="35.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@20000hours.JPG" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <TextArea layoutX="263.0" layoutY="28.0" prefHeight="130.0" prefWidth="181.0" text="&quot;Only app on my phone besides Toon Blast.&quot;&#10;&#10;&#9;&#9;-Ryan Reynolds" wrapText="true" />
+                <ImageView fitHeight="129.9999771118164" fitWidth="231.11107319557505" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@Reynolds.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </items>
+          <stylesheets>
+            <URL value="@Tangerine.css" />
+          </stylesheets>
+        </SplitPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

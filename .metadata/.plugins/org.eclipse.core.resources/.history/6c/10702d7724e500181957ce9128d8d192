@@ -1,0 +1,27 @@
+.menu-bar {
+	-fx-background-color: white;
+}
+.text {
+	-fx-font-family: Actor;
+	-fx-fill: black;
+	-fx-font-size: 20px;
+}
+.label {
+	-fx-font-size: 20px;
+	-fx-label-padding: 8px;
+	-fx-background-color: white;
+}
+.button {
+	-fx-background-color: #ffa834;
+}
+.button:hover {
+	-fx-background-color: white;
+	-fx-border-color: #ffa834;
+	-fx-border-width: 2px;
+	-fx-border-radius: 5px, 5px, 4px, 3px;
+	-fx-border-insets: 0px 0px-1px 0px, 0px, 1px, 2px;
+}
+.button:hover .text {
+	-fx-font-family: Actor;
+	-fx-fill: #ffa834;
+}

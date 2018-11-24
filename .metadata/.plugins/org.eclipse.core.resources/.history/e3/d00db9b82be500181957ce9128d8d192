@@ -1,0 +1,4 @@
+.text-field {
+	-fx-font-family: Actor;
+	-fx-font-size: 14px;
+}

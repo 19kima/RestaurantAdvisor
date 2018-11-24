@@ -1,0 +1,36 @@
+package controllers;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
+
+public class ResultsViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+
+    @FXML
+    void Home(ActionEvent event) {
+    }
+
+    @FXML
+    void Restaurants(ActionEvent event) {
+    }
+
+    @FXML
+    void YourReviews(ActionEvent event) {
+    }
+
+    @FXML
+    void initialize() {
+
+
+    }
+
+}

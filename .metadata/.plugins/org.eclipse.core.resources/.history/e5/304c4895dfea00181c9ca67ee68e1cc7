@@ -1,0 +1,32 @@
+package models;
+
+public class Review {
+	private String user;
+	private double rating;
+	private String text;
+	
+	public Review() {
+		user = null;
+		rating = 5;
+		text = null;
+	}
+	
+	public String getUser() {
+		return user;
+	}
+	public void setUser(String user) {
+		this.user = user;
+	}
+	public double getRating() {
+		return rating;
+	}
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+}

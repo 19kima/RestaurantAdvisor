@@ -1,0 +1,61 @@
+package landingPage;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+
+public class HomeViewController {
+
+	@FXML
+	private ResourceBundle resources;
+
+	@FXML
+	private URL location;
+
+	@FXML
+	private Button Login;
+
+	@FXML
+	private Menu MyReviewsNav;
+
+	@FXML
+	private Menu RestaurantNav;
+
+	@FXML
+	private Button SearchText;
+
+	@FXML
+	void Login(ActionEvent event) {
+		try {
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login/LoginView.fxml"));
+			Parent root = (Parent) fxmlLoader.load();
+			Stage stage = new Stage();
+			stage.setScene(new Scene(root));
+			stage.show();
+			//HomeView.stg.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@FXML
+	void Search(ActionEvent event) {
+	}
+
+	@FXML
+	void initialize() {
+		assert Login != null : "fx:id=\"Login\" was not injected: check your FXML file 'HomeView.fxml'.";
+		assert MyReviewsNav != null : "fx:id=\"MyReviewsNav\" was not injected: check your FXML file 'HomeView.fxml'.";
+		assert RestaurantNav != null : "fx:id=\"RestaurantNav\" was not injected: check your FXML file 'HomeView.fxml'.";
+		assert SearchText != null : "fx:id=\"SearchText\" was not injected: check your FXML file 'HomeView.fxml'.";
+
+	}
+
+}

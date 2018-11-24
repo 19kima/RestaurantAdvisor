@@ -1,0 +1,12 @@
+.button {
+	-fx-background-color: white;
+	-fx-font-size: 20px;
+	-fx-font-family: Actor;
+}
+.button:hover .text {
+	-fx-fill: grey;
+}
+
+.NavDrop {
+	filter: drop-shadow(30px 10px 4px black);
+}

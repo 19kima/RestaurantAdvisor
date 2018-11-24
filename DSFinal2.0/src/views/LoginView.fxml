@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1380.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.LoginViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="596.0" prefWidth="1380.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.17" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.83">
+      <children>
+        <Label layoutX="681.0" layoutY="142.0" text="Login" />
+        <TextField fx:id="user" layoutX="504.0" layoutY="192.0" prefWidth="433.0" promptText="Username" />
+        <TextField fx:id="password" layoutX="504.0" layoutY="227.0" prefWidth="433.0" promptText="Password" />
+        <Button fx:id="LogIn" layoutX="678.0" layoutY="267.0" mnemonicParsing="false" onAction="#LogIn" text="Login" />
+        <Label layoutX="583.0" layoutY="405.0" text="Don't have an account?" />
+        <Button fx:id="SignUp" layoutX="671.0" layoutY="484.0" mnemonicParsing="false" onAction="#SignUp" text="SignUp" />
+      </children>
+      <stylesheets>
+        <URL value="@../css/RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+    <AnchorPane prefHeight="61.0" prefWidth="1439.9999169921875" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@../images/logo.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="Restaurants" disable="false" layoutX="372.0" layoutY="12.0" mnemonicParsing="false" onAction="#Restaurants" prefHeight="35.0" prefWidth="141.22216796875" text="Restaurants" visible="false" />
+        <Button fx:id="YourReviews" disable="false" layoutX="504.0" layoutY="12.0" mnemonicParsing="false" onAction="#YourReviews" prefHeight="35.0" prefWidth="163.0" text="Your Reviews" visible="false" />
+        <Button fx:id="Home" layoutX="262.0" layoutY="12.0" mnemonicParsing="false" onAction="#Home" prefHeight="35.0" prefWidth="110.0" text="Home" />
+      </children>
+      <effect>
+        <DropShadow height="7.5" radius="1.375" width="0.0" />
+      </effect>
+      <stylesheets>
+        <URL value="@../css/NavBar.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+.menu-bar {
+	-fx-background-color: white;
+}
+.text {
+	-fx-font-family: Actor;
+	-fx-fill: black;
+}
+.label {
+	-fx-font-size: 20px;
+	-fx-label-padding: 8px;
+}
+.button {
+	-fx-background-color: #ffa834;
+}
+.button:hover {
+	-fx-background-color: white;
+	-fx-background-color: #ffa834;
+}

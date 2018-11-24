@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="870.25" prefWidth="1440.4444580078125" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.EditRestaurantViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.44" AnchorPane.rightAnchor="-0.44" AnchorPane.topAnchor="60.0">
+      <children>
+        <ImageView fitHeight="810.2499957543231" fitWidth="1440.4444580078125" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../images/oranges.png" />
+          </image>
+        </ImageView>
+        <ListView fx:id="Menu" layoutX="754.0" layoutY="111.0" onMouseClicked="#RemoveMenu" prefHeight="473.0" prefWidth="581.0" />
+        <Label layoutX="754.0" layoutY="34.0" text="Menu Items" />
+        <AnchorPane layoutX="14.0" layoutY="12.0" minHeight="61.0" prefHeight="85.0" prefWidth="632.0">
+          <children>
+            <TextField id="Name" fx:id="NameSet" layoutX="0.0" layoutY="0.0" prefHeight="85.0" prefWidth="473.0" />
+          </children>
+        </AnchorPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="542.0" layoutX="14.0" layoutY="111.0" stroke="#9f9f9f" strokeType="INSIDE" width="607.0" />
+        <Label fx:id="Address" layoutX="24.0" layoutY="121.0" text="Address:" />
+        <Label fx:id="Phone" layoutX="24.0" layoutY="171.0" text="Phone: " />
+        <Label fx:id="Email" layoutX="24.0" layoutY="221.0" text="Email: " />
+        <Label layoutX="24.0" layoutY="264.0" text="Hours:" />
+        <ListView fx:id="Hours" layoutX="34.0" layoutY="321.0" onMouseClicked="#OpenEditing" prefHeight="168.0" prefWidth="227.30996704101562" />
+        <Label fx:id="Price" layoutX="284.0" layoutY="364.0" text="Price: " />
+        <Label fx:id="Cusine" layoutX="26.0" layoutY="508.0" text="Types of Cusine:" />
+        <Label fx:id="Dining" layoutX="289.0" layoutY="405.0" text="Type of Dining:" />
+        <TextField id="Address" fx:id="AddressSet" layoutX="134.0" layoutY="129.0" prefHeight="35.0" prefWidth="473.0" />
+        <TextField fx:id="PhoneSet" layoutX="112.0" layoutY="180.0" prefHeight="35.0" prefWidth="495.0" />
+        <TextField fx:id="EmailSet" layoutX="104.0" layoutY="229.0" prefHeight="35.0" prefWidth="503.0" />
+        <TextField fx:id="HoursSet" layoutX="282.0" layoutY="320.0" prefHeight="35.0" prefWidth="148.0" />
+        <Text layoutX="34.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Day:" />
+        <Text layoutX="284.0" layoutY="316.0" scaleX="1.0000031640093132" scaleY="1.0619130108908468" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours:" />
+        <TextField fx:id="PriceSet" layoutX="360.0" layoutY="372.0" prefHeight="35.0" prefWidth="110.0" />
+        <TextField fx:id="TypeOfDiningSet" layoutX="288.0" layoutY="454.0" prefHeight="35.0" prefWidth="244.0" />
+        <TextField fx:id="TypeOfCuisineSet" layoutX="34.0" layoutY="570.0" prefHeight="35.0" prefWidth="508.0" />
+        <TextField fx:id="MenuNameSet" layoutX="754.0" layoutY="605.0" prefHeight="35.0" prefWidth="215.0" />
+        <Text layoutX="754.0" layoutY="605.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+        <TextField fx:id="MenuPriceSet" layoutX="994.0" layoutY="605.0" prefHeight="35.0" prefWidth="215.0" />
+        <Text layoutX="994.0" layoutY="602.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" />
+        <Button id="Add" fx:id="AddMenu" layoutX="1236.0" layoutY="605.0" mnemonicParsing="false" onAction="#AddMenu" text="Add" />
+        <Text disable="false" layoutX="754.0" layoutY="108.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to Delete" visible="true" />
+        <Button fx:id="EditHours" disable="true" layoutX="439.0" layoutY="320.0" mnemonicParsing="false" onAction="#SaveHours" text="Edit" />
+        <Button fx:id="Save" layoutX="1172.0" layoutY="24.0" mnemonicParsing="false" onAction="#SavePage" prefHeight="61.0" prefWidth="163.0" text="Save Page" />
+      </children>
+      <stylesheets>
+        <URL value="@../css/RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+    <AnchorPane prefHeight="61.0" prefWidth="1439.9999169921875" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@../images/logo.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="Login" mnemonicParsing="false" onAction="#Login" prefHeight="35.0" prefWidth="124.00000005960464" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <Button id="Restaurants" layoutX="372.0" layoutY="12.0" mnemonicParsing="false" onAction="#Restaurants" prefHeight="35.0" prefWidth="141.22216796875" text="Restaurants" />
+        <Button id="YourReviews" layoutX="504.0" layoutY="12.0" mnemonicParsing="false" onAction="#YourReviews" prefHeight="35.0" prefWidth="163.0" text="Your Reviews" />
+        <Button disable="false" layoutX="262.0" layoutY="12.0" mnemonicParsing="false" onAction="#Home" prefHeight="35.0" prefWidth="110.0" text="Home" />
+      </children>
+      <effect>
+        <DropShadow height="30.0" radius="7.0" width="0.0" />
+      </effect>
+      <stylesheets>
+        <URL value="@../css/NavBar.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

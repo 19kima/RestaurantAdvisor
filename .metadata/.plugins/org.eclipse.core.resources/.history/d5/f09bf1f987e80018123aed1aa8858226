@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1440.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.ResultsViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+      <children>
+        <ListView layoutX="40.0" layoutY="69.0" prefHeight="509.0" prefWidth="1198.0" />
+        <Label layoutX="26.0" layoutY="15.0" text="Search Restaurants" />
+        <TextField layoutX="522.0" layoutY="14.0" prefHeight="50.0" prefWidth="520.0" promptText="Search By Restaurant Name" style="-fx-border-radius: 25px 0px 0px 25px;&#10;-fx-background-radius: 25px 0px 0px 25px;&#10;-fx-font-size: 20px;" />
+        <Button layoutX="1042.0" layoutY="15.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" style="-fx-border-radius: 0px 25px 25px 0px;&#10;-fx-background-radius: 0px 25px 25px 0px;" text="Search" />
+      </children>
+      <stylesheets>
+        <URL value="@../css/RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+    <AnchorPane prefHeight="61.0" prefWidth="1439.9999169921875" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@../images/logo.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="Login" mnemonicParsing="false" prefHeight="35.0" prefWidth="124.00000005960464" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <Button id="Restaurants" disable="true" layoutX="372.0" layoutY="12.0" mnemonicParsing="false" onAction="#Restaurants" prefHeight="35.0" prefWidth="141.22216796875" text="Restaurants" />
+        <Button id="YourReviews" layoutX="504.0" layoutY="12.0" mnemonicParsing="false" onAction="#YourReviews" prefHeight="35.0" prefWidth="163.0" text="Your Reviews" />
+        <Button disable="false" layoutX="262.0" layoutY="12.0" mnemonicParsing="false" onAction="#Home" prefHeight="35.0" prefWidth="110.0" text="Home" />
+      </children>
+      <effect>
+        <DropShadow height="30.0" radius="7.0" width="0.0" />
+      </effect>
+      <stylesheets>
+        <URL value="@../css/NavBar.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

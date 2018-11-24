@@ -1,0 +1,10 @@
+package project1;
+
+public class Restaurant {
+	private String name;
+	private String address;
+	private String phone;
+	private int priceRange;
+	private int[] Ratings;
+	
+}

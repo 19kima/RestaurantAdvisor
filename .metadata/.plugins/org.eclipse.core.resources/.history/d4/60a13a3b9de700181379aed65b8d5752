@@ -1,0 +1,35 @@
+package login;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.layout.VBox;
+
+public class LoginViewController {
+
+	@FXML
+	private ResourceBundle resources;
+
+	@FXML
+	private URL location;
+
+	@FXML
+	private VBox Box;
+
+	@FXML
+	void SignUp(ActionEvent event) {
+
+	}
+
+	void LogIn(ActionEvent event) {
+
+	}
+
+	@FXML
+	void initialize() {
+		assert Box != null : "fx:id=\"Box\" was not injected: check your FXML file 'LoginView.fxml'.";
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package project1;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+
+
+public class HomeViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private Menu MyReviewsNav;
+
+    @FXML
+    private Menu RestaurantNav;
+
+    @FXML
+    private Button SearchText;
+
+
+    @FXML
+    void Search(ActionEvent event) {
+    }
+
+    @FXML
+    void initialize() {
+        assert MyReviewsNav != null : "fx:id=\"MyReviewsNav\" was not injected: check your FXML file 'HomeView.fxml'.";
+        assert RestaurantNav != null : "fx:id=\"RestaurantNav\" was not injected: check your FXML file 'HomeView.fxml'.";
+        assert SearchText != null : "fx:id=\"SearchText\" was not injected: check your FXML file 'HomeView.fxml'.";
+
+
+    }
+
+}

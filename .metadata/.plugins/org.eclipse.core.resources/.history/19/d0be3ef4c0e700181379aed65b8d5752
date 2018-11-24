@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox prefHeight="727.0" prefWidth="1440.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="60.0" prefWidth="200.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@../images/logo.png" />
+          </image>
+        </ImageView>
+        <MenuBar prefHeight="59.82856750488281" prefWidth="1175.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <menus>
+            <Menu mnemonicParsing="false" onAction="#Home" text="Home" fx:id="Home" />
+            <Menu mnemonicParsing="false" text="Restaurants" visible="false" />
+            <Menu mnemonicParsing="false" text="My Reviews" visible="false" />
+          </menus>
+        </MenuBar>
+        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+      </children>
+      <effect>
+        <DropShadow height="15.0" radius="3.25" width="0.0" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/NavBar.css" />
+      </stylesheets>
+    </AnchorPane>
+    <AnchorPane prefHeight="666.0" prefWidth="1440.0">
+      <children>
+        <Label layoutX="491.0" layoutY="81.0" text="Name" />
+        <TextField fx:id="name" layoutX="502.0" layoutY="141.0" prefWidth="437.0" promptText="Name" />
+        <Label layoutX="491.0" layoutY="166.0" text="Login Information" />
+        <TextField fx:id="username" layoutX="502.0" layoutY="225.0" prefWidth="437.0" promptText="Username" />
+        <TextField fx:id="password" layoutX="502.0" layoutY="264.0" prefWidth="437.0" promptText="Password" />
+        <Button fx:id="Signup" layoutX="656.0" layoutY="316.0" mnemonicParsing="false" onAction="#Signup" text="SignUp" />
+        <Label layoutX="664.0" layoutY="23.0" text="Sign Up" underline="true" />
+      </children>
+      <stylesheets>
+        <URL value="@../style/RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</VBox>

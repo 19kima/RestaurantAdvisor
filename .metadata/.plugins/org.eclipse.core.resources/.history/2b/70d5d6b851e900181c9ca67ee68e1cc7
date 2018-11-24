@@ -1,0 +1,57 @@
+package controllers;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+
+public class RestaurantViewController {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private Label Address;
+
+    @FXML
+    private Label Email;
+
+    @FXML
+    private Label Phone;
+
+    @FXML
+    private Label RestaurantName;
+
+
+    @FXML
+    void Home(ActionEvent event) {
+    }
+
+    @FXML
+    void Login(ActionEvent event) {
+    }
+
+    @FXML
+    void Restaurants(ActionEvent event) {
+    }
+
+    @FXML
+    void YourReviews(ActionEvent event) {
+    }
+
+    @FXML
+    void initialize() {
+        assert Address != null : "fx:id=\"Address\" was not injected: check your FXML file 'RestaurantView.fxml'.";
+        assert Email != null : "fx:id=\"Email\" was not injected: check your FXML file 'RestaurantView.fxml'.";
+        assert Phone != null : "fx:id=\"Phone\" was not injected: check your FXML file 'RestaurantView.fxml'.";
+        assert RestaurantName != null : "fx:id=\"RestaurantName\" was not injected: check your FXML file 'RestaurantView.fxml'.";
+
+
+    }
+
+}

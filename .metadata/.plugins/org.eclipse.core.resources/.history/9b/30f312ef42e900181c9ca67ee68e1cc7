@@ -1,0 +1,30 @@
+.text-field {
+	-fx-font-family: Actor;
+	-fx-font-size: 14px;
+}
+.button {
+	-fx-background-color: #ffa834;
+	-fx-font-size: 20px;
+}
+.button:hover {
+	-fx-background-color: white;
+	-fx-border-color: #ffa834;
+	-fx-border-width: 2px;
+	-fx-border-radius: 5px, 5px, 4px, 3px;
+	-fx-border-insets: 0px 0px-1px 0px, 0px, 1px, 2px;
+}
+.button:hover .text {
+	-fx-font-family: Actor;
+	-fx-fill: #ffa834;
+}
+.label {
+	-fx-font-size: 25px;
+	-fx-label-padding: 8px;
+	-fx-background-color: white;
+}
+
+.listcell {
+	-fx-font-size: 18px;
+	-fx-font-family: Actor;	
+}
+}

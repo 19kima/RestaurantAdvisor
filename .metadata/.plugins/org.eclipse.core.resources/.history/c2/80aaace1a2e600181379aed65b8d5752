@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1440.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="60.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView fitHeight="59.82856750488281" fitWidth="261.74997712816696" layoutX="0.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+          <image>
+            <Image url="@logo.png" />
+          </image>
+        </ImageView>
+        <MenuBar prefHeight="59.82856750488281" prefWidth="1175.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="Home" />
+            <Menu mnemonicParsing="false" text="Restaurants" />
+            <Menu mnemonicParsing="false" text="My Reviews" />
+          </menus>
+          <stylesheets>
+            <URL value="@NavBar.css" />
+          </stylesheets>
+        </MenuBar>
+        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Login" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+          <stylesheets>
+            <URL value="@NavBar.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <effect>
+        <DropShadow height="30.0" radius="7.0" width="0.0" />
+      </effect>
+    </AnchorPane>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+      <children>
+        <ListView layoutX="40.0" layoutY="69.0" prefHeight="509.0" prefWidth="1198.0" />
+        <Label layoutX="26.0" layoutY="19.0" text="Search Restaurants" />
+        <TextField layoutX="522.0" layoutY="14.0" prefHeight="50.0" prefWidth="520.0" promptText="Search By Restaurant Name" style="-fx-border-radius: 25px 0px 0px 25px;&#10;-fx-background-radius: 25px 0px 0px 25px;&#10;-fx-font-size: 20px;">
+          <stylesheets>
+            <URL value="@Tangerine.css" />
+          </stylesheets>
+        </TextField>
+        <Button layoutX="1042.0" layoutY="15.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" style="-fx-border-radius: 0px 25px 25px 0px;&#10;-fx-background-radius: 0px 25px 25px 0px;" text="Search">
+          <stylesheets>
+            <URL value="@Tangerine.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <stylesheets>
+        <URL value="@RegularView.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

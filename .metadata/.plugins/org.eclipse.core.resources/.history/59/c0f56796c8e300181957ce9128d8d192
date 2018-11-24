@@ -1,0 +1,4 @@
+.menu-bar {
+	text-color: black;
+	background-color: white;
+}

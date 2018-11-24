@@ -1,0 +1,8 @@
+.button {
+	-fx-background-color: white;
+	-fx-font-size: 20px;
+	-fx-font-family: Actor;
+}
+.button:hover {
+	-fx-font-fill: grey;
+}

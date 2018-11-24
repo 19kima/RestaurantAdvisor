@@ -1,0 +1,4 @@
+.button {
+	-fx-background-color: white;
+	-fx-font-size: 20px;
+}

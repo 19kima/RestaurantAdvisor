@@ -1,0 +1,23 @@
+package models;
+
+import dataStructures.DSArrayIndexedList;
+
+public class Restaurant {
+	private String name;
+	private String address;
+	private String phone;
+	private String email;
+	private String price;
+	private String typeOfDining;
+	private String typeOfCuisine;
+	private DSArrayIndexedList hours;
+	private DSArrayIndexedList reviews;
+
+	public Restaurant() {
+		hours = new DSArrayIndexedList(7);
+		for (int i = 0; i < 7; i++) {
+
+		}
+	}
+
+}
