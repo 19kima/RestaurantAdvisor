@@ -1,6 +1,8 @@
 package dataStructures;
 
-public class DSArrayUnsortedList<T> implements DSListInterface<T> {
+import java.io.Serializable;
+
+public class DSArrayUnsortedList<T> implements DSListInterface<T>, Serializable {
 	protected final int DEFCAP = 100; // default capacity
 	protected int origCap; // original capacity
 	protected T[] list; // array to hold this list’s elements

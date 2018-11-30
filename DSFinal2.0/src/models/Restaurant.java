@@ -1,8 +1,10 @@
 package models;
 
+import java.io.Serializable;
+
 import dataStructures.DSArrayIndexedList;
 
-public class Restaurant {
+public class Restaurant implements Serializable{
 	private String name;
 	private String address;
 	private String phone;

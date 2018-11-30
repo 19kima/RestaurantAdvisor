@@ -1,8 +1,10 @@
 package models;
 
+import java.io.Serializable;
+
 import dataStructures.DSArrayIndexedList;
 
-public class User {
+public class User implements Serializable{
 	private String name;
 	private String username;
 	private String password;

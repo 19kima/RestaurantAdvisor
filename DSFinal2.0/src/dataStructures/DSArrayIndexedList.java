@@ -1,5 +1,8 @@
 package dataStructures;
-public class DSArrayIndexedList<T> extends DSArrayUnsortedList<T> implements DSIndexedListInterface<T> {
+
+import java.io.Serializable;
+
+public class DSArrayIndexedList<T> extends DSArrayUnsortedList<T> implements DSIndexedListInterface<T>, Serializable{
 	public DSArrayIndexedList() {
 		super();
 	}

@@ -1,8 +1,10 @@
 package models;
 
+import java.io.Serializable;
+
 import application.Main;
 
-public class Review {
+public class Review implements Serializable {
 	private User user;
 	private Restaurant name;
 	private double rating;

@@ -9,6 +9,13 @@ import models.Review;
 import models.User;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 
 public class Main extends Application {
@@ -21,8 +28,12 @@ public class Main extends Application {
 	private static Review currentReview;
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		restaurants = new DSArrayIndexedList<Restaurant>();
-		users = new DSArrayIndexedList<User>();
+		FileInputStream userFile = new FileInputStream(new File("Users.txt"));
+		ObjectInputStream userReader = new ObjectInputStream(userFile);
+		FileInputStream restaurantFile = new FileInputStream(new File("Restaurants.txt"));
+		ObjectInputStream restaurantReader = new ObjectInputStream(restaurantFile);
+		restaurants = (DSArrayIndexedList<Restaurant>) restaurantReader.readObject();
+		users = (DSArrayIndexedList<User>) userReader.readObject();
 		primaryStage.setTitle("Landing Page");
 		//primaryStage.setFullScreen(true);
 		primaryStage.setMaximized(true);
