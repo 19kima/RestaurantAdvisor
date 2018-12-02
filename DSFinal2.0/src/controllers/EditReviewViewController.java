@@ -71,6 +71,7 @@ public class EditReviewViewController {
 		Main.getCurrentReview().setRating(Double.parseDouble(Rating.getText()));
     	Main.getCurrentReview().setText(Review.getText());
     	Main.getCurrentRestaurant().calcRating();
+    	Main.saveData();
 		Parent newView = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/RestaurantView.fxml"));
 		Scene newScene = new Scene(newView);
 		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();

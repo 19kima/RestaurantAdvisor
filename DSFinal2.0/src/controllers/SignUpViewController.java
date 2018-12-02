@@ -73,10 +73,10 @@ public class SignUpViewController {
     		}
     	}
     	if (!userExists) {
-    		Main.getUsers().add(numUsers, newUser);
+    		Main.getUsers().add(newUser);
         	Main.setLoggedin(true);
         	Main.setCurrentUser(Main.getUsers().get(numUsers));
-        	numUsers++;
+        	Main.saveData();
         	Parent newView = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/HomeView.fxml"));
     		Scene newScene = new Scene(newView);
     		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();

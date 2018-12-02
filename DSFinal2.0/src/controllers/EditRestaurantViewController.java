@@ -1,5 +1,11 @@
 package controllers;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -185,8 +191,7 @@ public class EditRestaurantViewController {
 		starter.setPrice(PriceSet.getText());
 		starter.setTypeOfCuisine(TypeOfCuisineSet.getText());
 		starter.setTypeOfDining(TypeOfDiningSet.getText());
-		Main.getRestaurants().add(RestaurantCounter, starter);
-		RestaurantCounter++;
+		Main.saveData();
 		Parent newView = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/ResultsView.fxml"));
 		Scene newScene = new Scene(newView);
 		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -230,6 +235,7 @@ public class EditRestaurantViewController {
 			Main.setCurrentRestaurant(new Restaurant());
 			starter = Main.getCurrentRestaurant();
 			Save.setText("Add");
+			Main.getRestaurants().add(starter);
 		} else {
 			starter = Main.getCurrentRestaurant();
 		}

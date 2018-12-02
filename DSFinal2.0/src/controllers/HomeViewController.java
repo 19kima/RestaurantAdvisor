@@ -52,6 +52,10 @@ public class HomeViewController {
 		} else {
 			Login.setText("Login");
 			Main.setLoggedin(false);
+			Parent newView = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/LoginView.fxml"));
+			Scene newScene = new Scene(newView);
+			Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+			mainWindow.setScene(newScene);
 		}
 	}
 
