@@ -100,6 +100,7 @@ public class HomeViewController {
 		} else {
 			Restaurants.setText("");
 			YourReviews.setText("");
+			Main.setAdmin(false);
 		}
 
 	}

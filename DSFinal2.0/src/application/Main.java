@@ -20,6 +20,7 @@ import java.io.PrintWriter;
 
 public class Main extends Application {
 	private static boolean Loggedin;
+	private static boolean admin;
 	private static Stage MainStage;
 	private static DSArrayIndexedList<Restaurant> restaurants;
 	private static Restaurant currentRestaurant;
@@ -79,6 +80,7 @@ public class Main extends Application {
 
 	public static void main(String[] args) {
 		setLoggedin(false);
+		setAdmin(false);
 		launch(args);
 	}
 
@@ -188,5 +190,13 @@ public class Main extends Application {
 		} catch (IOException e) {
 			System.out.println("Error initializing stream");
 		}
+	}
+
+	public static boolean isAdmin() {
+		return admin;
+	}
+
+	public static void setAdmin(boolean admin) {
+		Main.admin = admin;
 	}
 }

@@ -82,6 +82,9 @@ public class ResultsViewController {
         assert Details != null : "fx:id=\"Details\" was not injected: check your FXML file 'ResultsView.fxml'.";
         assert FoodList != null : "fx:id=\"FoodList\" was not injected: check your FXML file 'ResultsView.fxml'.";
         assert Login != null : "fx:id=\"Login\" was not injected: check your FXML file 'ResultsView.fxml'.";
+        if (!Main.isAdmin()) {
+        	//add restaurant hidden
+        }
         Login.setText(Main.getCurrentUser().getName());
         ObservableList elements = FXCollections.observableArrayList();
         for (int i = 0; i < Main.getRestaurants().size(); i++) {

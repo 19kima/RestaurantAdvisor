@@ -74,6 +74,9 @@ public class LoginViewController {
     	if (sucess) {
     		Main.setLoggedin(true);
     		Main.setCurrentUser(temp);
+    		if(Main.getCurrentUser().getName().equals("admin")) {
+    			Main.setAdmin(true);
+    		}
     		Parent newView = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/HomeView.fxml"));
     		Scene newScene = new Scene(newView);
     		Stage mainWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
