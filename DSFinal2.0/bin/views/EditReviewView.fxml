@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="870.25" prefWidth="1440.4444580078125" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.EditReviewViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditReviewViewController">
   <!-- TODO Add Nodes -->
   <children>
     <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.44" AnchorPane.rightAnchor="-0.44" AnchorPane.topAnchor="60.0">
       <children>
-        <ImageView fitHeight="810.2499957543231" fitWidth="1440.4444580078125" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="552.0" fitWidth="976.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@../images/oranges.png" />
           </image>
@@ -26,11 +27,11 @@
           </children>
         </AnchorPane>
         <Text layoutX="14.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
-        <TextField fx:id="Rating" layoutX="213.0" layoutY="118.0" prefHeight="50.0" prefWidth="200.0" />
-        <Label layoutX="14.0" layoutY="118.0" text="Rating out of 5:" />
-        <Label layoutX="14.0" layoutY="185.0" text="Your Review:" />
-        <Button fx:id="AddReview" layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onAction="#ReviewSet" prefHeight="50.000099999997474" prefWidth="632.0" text="Add Review" />
-        <TextArea fx:id="Review" layoutX="14.0" layoutY="244.0" prefHeight="272.0" prefWidth="751.0" wrapText="true" />
+        <TextField fx:id="Rating" layoutX="621.0" layoutY="29.0" prefHeight="50.0" prefWidth="200.0" />
+        <Label layoutX="422.0" layoutY="29.0" text="Rating out of 5:" />
+        <Label layoutX="14.0" layoutY="116.0" text="Your Review:" />
+        <Button fx:id="AddReview" layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#ReviewSet" prefHeight="50.000099999997474" prefWidth="632.0" text="Add Review" />
+        <TextArea fx:id="Review" layoutX="14.0" layoutY="176.0" prefHeight="272.0" prefWidth="751.0" wrapText="true" />
       </children>
       <stylesheets>
         <URL value="@../css/RegularView.css" />
