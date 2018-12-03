@@ -127,12 +127,7 @@ public class RestaurantViewController {
 		Dining.setText("Type of Dining: " + restaurantSetter.getTypeOfDining());
 		Cusine.setText("Type of Cusine: " + restaurantSetter.getTypeOfCuisine());
 		Price.setText("Price: " + restaurantSetter.getPrice());
-		if (Main.getCurrentRestaurant().getReviews().size() == 0) {
-			RestaurantName.setText(restaurantSetter.getName()+ " | No Reviews");
-		} else {
-			RestaurantName.setText(restaurantSetter.getName()+ " | " + restaurantSetter.getRating() + "/5.0");
-			
-		}
+		RestaurantName.setText(restaurantSetter.getName()+ " | " + restaurantSetter.getRating() + "/5.0");
 		ObservableList hoursToAdd = FXCollections.observableArrayList();
 		hoursToAdd.add("Monday: " + restaurantSetter.getHours().get(0));
 		hoursToAdd.add("Tuesday: " + restaurantSetter.getHours().get(1));

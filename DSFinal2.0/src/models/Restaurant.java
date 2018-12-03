@@ -118,12 +118,7 @@ public class Restaurant implements Serializable{
 		this.rating = rating;
 	}
 	public String toString() {
-		if (reviews.size() == 0) {
-			return name + " | No Reviews\n" + "Price: " + price +	"	Type: " + typeOfCuisine +	"	Address: " + address;
-		} else {
-			return name + " | " + rating + "/5\n" + "Price: " + price +	"	Type: " + typeOfCuisine +	"	Address: " + address;
-		}
-		
+		return name + " | " + rating + "/5\n" + "Price: " + price +	"	Type: " + typeOfCuisine +	"	Address: " + address;
 	}
 
 	public DSArrayIndexedList<String> getMenu() {
