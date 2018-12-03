@@ -95,6 +95,7 @@ public class YourReviewsViewController {
         	elements.add(Main.getCurrentUser().getYourReviews().get(i).toStringYourReviews());
         }
         YourReviewsList.setItems(elements);
+        Login.setText(Main.getCurrentUser().getName());
 
     }
 
